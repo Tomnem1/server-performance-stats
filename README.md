@@ -10,10 +10,17 @@ Stats" project.
 
 ## Usage
 
-```bash
-chmod +x server-stats.sh
-./server-stats.sh
-```
+1. Make the script executable (only needed once):
+
+   ```bash
+   chmod +x server-stats.sh
+   ```
+
+2. Run it:
+
+   ```bash
+   ./server-stats.sh
+   ```
 
 ## Example Output
 
