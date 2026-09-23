@@ -2,7 +2,7 @@
 echo "
 #### TOTAL CPU USAGE ####
     "
-top -bn1 | grep "Cpu(s)" | awk '{print "Total CPU Usage: "100 - $8"%"}'
+top -bn1 | grep "Cpu(s)" | grep -oE '[0-9.]+ id' | awk '{print "Total CPU Usage: "100 - $1"%"}'
 
 echo "
 #### MEMORY USAGE ####
